@@ -1,10 +1,10 @@
 workflows:
-  android-release:
-    name: Android Release
+  android-debug:
+    name: Android Debug
     environment:
       flutter: stable
     scripts:
       - flutter pub get
-      - flutter build apk --release
+      - flutter build apk --debug
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/flutter-apk/app-debug.apk
